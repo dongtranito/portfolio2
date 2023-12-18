@@ -1,0 +1,240 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: rgb(181, 168, 168); */
+}
+@font-face {
+    font-family: 'calistoga'; /* Tên font chữ */
+    src: url('./font/Calistoga-Regular.ttf') ; /* Đường dẫn đến tệp font */
+  }
+  
+  body {
+    font-family: 'calistoga', sans-serif; /* Sử dụng font chữ đã import */
+  }
+  
+.footer{
+    width: 100%;
+    height:1000px;
+}
+
+/* thanh dieu huong */
+.dieuHuong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #212121;
+    padding: 0px 20px;
+    position:fixed;
+    width:100%;
+    top:0px;
+    z-index: 1;
+}
+.dieuHuong div a{
+    text-decoration: none;
+    color:white;
+}
+
+.dieuHuong div a:hover {
+    color: red;
+}
+
+.trangChu{
+
+}
+.thanhVien{
+    display:flex;
+    justify-content: space-between;
+    width:400px;
+}
+
+
+
+
+/* END THANH DIEU HUONG */
+
+
+
+/* GIOI THIEU NHOM */
+.gioiThieuNhom{
+    margin-top:60px;
+    display:flex;
+    justify-content: space-around;
+    background-color:#212121;
+    padding:70px 40px;
+    
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #eb466d; /* Màu nền của hình tròn */
+    border-radius: 50%; /* Để làm hình tròn, sử dụng giá trị bán kính là 50% của chiều rộng */
+  }
+  
+.anhNhom{
+    flex:4;
+}
+
+
+.anhNhom img {
+    animation: shake 1s infinite; /* Áp dụng animation vô hạn */
+}
+
+@keyframes shake {
+    0% { transform: rotate(-1deg); } /* Góc quay ban đầu */
+    50% { transform: rotate(1deg); } /* Góc quay trong nửa chu kỳ */
+    100% { transform: rotate(-1deg); } /* Góc quay cuối cùng */
+}
+
+
+
+.noiDung{  
+    flex:5;
+}
+.tenNhom{
+    font-size: 50px;
+    Padding-left:30px;
+    color:#ffa9b3;
+    font-weight: 700;
+    padding-bottom: 30px;
+    border-left: 2px solid pink;
+}
+
+.gioiThieu{
+    padding-left:30px;
+    border-left: 2px solid pink ;
+    width:80%;
+    font-size: 22px;
+    text-align: justify;
+    padding-bottom:20px;
+    color:white;
+}
+
+
+/* END GIOI THIEU NHOM */
+/* GIOI THIEU THANH VIEN */
+
+.gioiThieuThanhVien{
+    padding:80px;
+    background-color: #b6bbc4;
+}
+.strikethrough {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 100px;
+}
+
+.strikethrough::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  height: 2px;
+  background-color: black;
+}
+
+.tungThanhVien{
+    display:flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+.tungThanhVien div a img{
+    width:100%;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.tungThanhVien div a img:hover{
+    transform: scale(1.5);
+}
+
+.anhNhom img{
+    
+}
+.anhNhom img:hover{
+    
+}
+
+
+
+/* END GIOI THIEU THANH VIEN */
+
+
+
+
+
+
+
+
+/* .gioiThieuThanhVien{
+    padding:80px;
+    background-color: #b6bbc4;
+}
+.strikethrough {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 100px;
+  margin-bottom: 100px;
+}
+
+.strikethrough::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  height: 2px;
+  background-color: black;
+}
+
+.tungThanhVien div{
+    position: relative;
+    height: 400px;
+}
+
+.tungThanhVien div a img{
+    height: 100%;
+}
+.tungThanhVien div .anh{
+    position: absolute;
+    z-index: 1;
+    padding:40px;
+    transition: transform 0.3s ease;
+}
+.tungThanhVien div .anh:hover{
+    transform: scale(1.3);
+}
+.tungThanhVien div .noiDung{
+    width: 800px;
+    height: 200px;
+    text-align: center; /* Căn giữa theo chiều ngang */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    border: black solid 1px ;
+    border-radius: 150px;
+    padding: 40px;
+    position: absolute;
+}
+
+.tungThanhVien .dong .noiDung{
+    top:150px;
+    left:500px; 
+}
+
+.tungThanhVien .dong .anh{
+    top: -32px;
+    left: 341px;
+}
+
+.tungThanhVien .nhi .noiDung{
+    top:150px;
+    left:300px; 
+}
+
+.tungThanhVien .nhi .anh{
+    top: -32px;
+    left: 1000px;
+} */
